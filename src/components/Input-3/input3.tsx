@@ -1,7 +1,9 @@
 import React, {ChangeEvent} from 'react';
 import Button from '@mui/material/Button';
+import {IconButton} from "@mui/material";
+import {CloudUpload} from "@mui/icons-material";
 
-const Input2 = () => {
+const Input3 = () => {
 
     const uploadHandler = (e: ChangeEvent<HTMLInputElement>) => {
         if (e.target.files && e.target.files.length) {
@@ -17,10 +19,12 @@ const Input2 = () => {
             {/*для того чтобы работал выбор файлов нужно обязательно тег <label> и component={'span'}*/}
             <label>
                 <input style={{display: 'none'}} onChange={uploadHandler} type="file"/>
-                <Button variant='contained' component={'span'}>Upload button </Button>
+                <IconButton component='span'>
+                    <CloudUpload fontSize={'large'} color={'primary'} />
+                </IconButton>
             </label>
         </div>
     );
 };
 
-export default Input2;
+export default Input3;
