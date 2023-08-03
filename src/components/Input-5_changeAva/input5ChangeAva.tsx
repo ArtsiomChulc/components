@@ -11,7 +11,7 @@ const Input5ChangeAva = () => {
     const uploadHandler = (e: ChangeEvent<HTMLInputElement>) => {
         if (e.target.files && e.target.files.length) {
             const file = e.target.files[0]
-            if (file.size < 4000000) {
+            if (file.size < 4_000_000) {
                 converterFileToBase64(file, (file64: string) => {
                     setAva(file64)
                 })
