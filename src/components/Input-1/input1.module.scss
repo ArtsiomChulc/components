@@ -1,0 +1,22 @@
+.block {
+
+
+    .wrapper {
+
+    }
+    button {
+        padding: 10px 15px;
+        font-size: 18px;
+        background: bisque;
+        border-radius: 7px;
+        cursor: pointer;
+        transition: background-color .3s ease-in-out;
+
+        &:hover {
+            background: #f1f1ab;
+        }
+    }
+}
+
+
+
