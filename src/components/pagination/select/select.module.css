@@ -1,0 +1,6 @@
+.selectBox {
+    display: flex;
+    color: white;
+    gap: 12px;
+    font-size: 14px;
+}

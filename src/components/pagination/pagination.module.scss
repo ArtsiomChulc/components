@@ -3,5 +3,16 @@
 
     .container {
         display: flex;
+
+        .item {
+            background-color: transparent;
+            border: none;
+            color: #808080;
+        }
+
+        .wrapMainBtn {
+            display: flex;
+            gap: 20px;
+        }
     }
 }

@@ -1,6 +1,7 @@
 import {FC} from "react";
 import {BiChevronLeft, BiChevronRight} from "react-icons/bi";
 import s from './mainPaginationButton.module.scss'
+import main from '../pagination.module.scss'
 
 type MainPaginationButtonsPropsType = {
     paginationRange: (number: number) => Array<number>
@@ -12,7 +13,7 @@ type PageButtonPropsType = {
 
 const PageButton: FC<PageButtonPropsType> = (props: PageButtonPropsType) => {
     return (
-        <button>
+        <button className={s.mainBtn}>
             {props.page}
         </button>
     )
@@ -37,7 +38,7 @@ export const MainPaginationButtons: FC<MainPaginationButtonsPropsType> = (props:
 
 export const PrevButton: FC = () => {
     return (
-        <button className={s.item} >
+        <button className={main.item} >
             <BiChevronLeft className={s.icon} size={16} />
         </button>
     )
@@ -45,8 +46,8 @@ export const PrevButton: FC = () => {
 
 export const NextButton: FC = () => {
     return (
-        <button className={s.item} >
-            <BiChevronRight className={s.icon} size={16} />
+        <button className={main.item} >
+            <BiChevronRight className={main.icon} size={16} />
         </button>
     )
 }
