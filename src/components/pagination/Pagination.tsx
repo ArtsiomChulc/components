@@ -3,9 +3,9 @@ import {FC} from "react";
 import {MainPaginationButtons, NextButton, PrevButton} from "./mainPaginationButtons/MainPaginationButtons";
 import {PerPageSelect} from "./select/PerPageSelect";
 import s from './pagination.module.scss'
+import {paginationRange} from "./utils/dataForPagination";
 
 export const Pagination: FC<PaginationProps> = () => {
-
 
     // const showPerPageSelect = !!perPage && !!perPageOptions && !!onPerPageChange
 
@@ -14,7 +14,7 @@ export const Pagination: FC<PaginationProps> = () => {
             <div className={s.container}>
                 <PrevButton />
 
-                <MainPaginationButtons/>
+                <MainPaginationButtons paginationRange={paginationRange}/>
 
                 <NextButton />
             </div>
