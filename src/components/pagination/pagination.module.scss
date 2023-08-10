@@ -8,6 +8,11 @@
             background-color: transparent;
             border: none;
             color: #808080;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(128, 128, 128, 0.53);
+            }
         }
 
         .wrapMainBtn {

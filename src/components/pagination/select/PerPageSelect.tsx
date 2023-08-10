@@ -41,7 +41,7 @@ export const PerPageSelect: FC = () => {
             textAlign: 'center',
             color: 'white',
         }),
-        valueContainer: styles => ({ ...styles, padding: 0 }),
+        valueContainer: styles => ({ ...styles, padding: 0, textAlign: 'left' }),
         singleValue: styles => ({ ...styles, color: 'white' }),
 
         option: styles => ({

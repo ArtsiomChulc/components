@@ -1,6 +1,6 @@
 import {PaginationProps} from "@mui/material";
 import {FC} from "react";
-import {MainPaginationButtons, NextButton, PrevButton} from "./mainPaginationButtons/MainPaginationButtons";
+import {MainPaginationButtons} from "./mainPaginationButtons/MainPaginationButtons";
 import {PerPageSelect} from "./select/PerPageSelect";
 import main from './pagination.module.scss'
 import {paginationRange} from "./utils/dataForPagination";
@@ -12,11 +12,11 @@ export const Pagination: FC<PaginationProps> = () => {
     return (
         <div className={main.wrap}>
             <div className={main.container}>
-                <PrevButton/>
+                {/*<PrevButton/>*/}
                 <div className={main.wrapMainBtn}>
                     <MainPaginationButtons paginationRange={paginationRange}/>
                 </div>
-                <NextButton/>
+                {/*<NextButton/>*/}
             </div>
             <PerPageSelect/>
         </div>
