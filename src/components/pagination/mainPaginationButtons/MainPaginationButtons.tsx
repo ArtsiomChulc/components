@@ -2,6 +2,7 @@ import {FC, useState} from "react";
 import {BiChevronLeft, BiChevronRight} from "react-icons/bi";
 import s from './mainPaginationButton.module.scss'
 import main from '../pagination.module.scss'
+import {getUsersAPI} from "../utils/getUsers";
 
 type MainPaginationButtonsPropsType = {
     paginationRange: (number: number) => Array<number>
@@ -25,7 +26,6 @@ export const MainPaginationButtons: FC<MainPaginationButtonsPropsType> = (props:
 
     const paginationRangeArray = props.paginationRange(10)
     let [activeItem, setActiveItem] = useState<number | null>(null)
-
     const switcherButtonsLeft = () => {
         if (activeItem !== null) {
             setActiveItem(--activeItem)
@@ -45,7 +45,6 @@ export const MainPaginationButtons: FC<MainPaginationButtonsPropsType> = (props:
                 }
             }
         }
-        console.log(activeItem)
 
     return (
             <>
