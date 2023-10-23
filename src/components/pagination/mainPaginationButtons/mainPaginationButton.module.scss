@@ -10,12 +10,14 @@
   cursor: pointer;
   text-align: center;
 
+  &.activeBtn {
+    background-color: white;
+    color: black;
+  }
+
   &:hover {
     background-color: #808080;
   }
 }
 
-.activeBtn {
-  background-color: white;
-  color: black;
-}
+

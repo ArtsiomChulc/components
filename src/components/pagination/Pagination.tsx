@@ -23,7 +23,6 @@ type UsersType = {
 export const Pagination: FC<PaginationProps> = () => {
 
     const [users, setUsers] = useState<UsersType[]>([])
-    console.log(users)
     const getUsersHandler = async () => {
         const users: UsersType[] = await getUsersAPI.getUsers().then(data => data.items)
         setUsers(users)
